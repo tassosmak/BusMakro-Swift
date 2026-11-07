@@ -51,6 +51,16 @@ img { max-width: 100%; }
 .hero h1 { font-size: clamp(40px, 6vw, 68px); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 18px; }
 .hero h1 span { color: var(--hero-accent); }
 .lead { font-size: 19px; color: rgba(255,255,255,.86); max-width: 34em; margin: 0 0 22px; }
+.get { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 28px; }
+.store {
+  display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 14px;
+  font-size: 16px; font-weight: 700; text-decoration: none; background: #fff; color: #0b1a3d;
+}
+.store::before { content: ""; margin-right: 8px; font-size: 20px; }
+.store.beta { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.5); }
+.store.beta::before { content: "✈"; font-size: 17px; }
+.store:hover { opacity: .9; }
+.store[hidden] { display: none; }
 .facts { list-style: none; padding: 0; margin: 0 0 40px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
 .facts li { font-size: 15px; font-weight: 600; color: rgba(255,255,255,.9); }
 .facts li::before { content: "✓"; color: var(--hero-accent); margin-right: 6px; }
